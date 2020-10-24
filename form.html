@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sbocciano Flower</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" id="templatecss" type="text/css" href="css/basic-grey.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="shortcut icon" href="images/img/SVG/Sbocciano-logo.jpg" sizes="16x16 32x32 48x48 64x64"
+        type="image/x-icon">
+
+    <style>
+        body {
+            background-color: #535e69;
+            cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat942.png), auto;
+        }
+
+        .navbar {
+            transition: 1s;
+        }
+
+        .navbar.hide {
+            transform: translateY(-80px);
+        }
+
+        .nav-link {
+            font-size: 0.6rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .nav-link:hover {
+            font-size: 0.6rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #BC5839;
+            outline-style: inset;
+        }
+
+        /* Basic Grey */
+        .basic-grey {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 500px;
+            background: #F7F7F7;
+            padding: 25px 15px 25px 10px;
+            font: 12px Georgia, "Times New Roman", Times, serif;
+            color: #888;
+            text-shadow: 1px 1px 1px #FFF;
+            border: 1px solid #E4E4E4;
+        }
+
+        .basic-grey h1 {
+            font-size: 25px;
+            padding: 0px 0px 10px 40px;
+            display: block;
+            border-bottom: 1px solid #E4E4E4;
+            margin: -10px -15px 30px -10px;
+            ;
+            color: #888;
+        }
+
+        .basic-grey h1>span {
+            display: block;
+            font-size: 11px;
+        }
+
+        .basic-grey label {
+            display: block;
+            margin: 0px;
+        }
+
+        .basic-grey label>span {
+            float: left;
+            width: 20%;
+            text-align: right;
+            padding-right: 10px;
+            margin-top: 10px;
+            color: #1e2f41;
+        }
+
+        .basic-grey input[type="text"],
+        .basic-grey input[type="email"],
+        .basic-grey textarea,
+        .basic-grey select {
+            border: 1px solid #DADADA;
+            color: #1e2f41;
+            height: 30px;
+            margin-bottom: 16px;
+            margin-right: 6px;
+            margin-top: 2px;
+            outline: 0 none;
+            padding: 3px 3px 3px 5px;
+            width: 70%;
+            font-size: 12px;
+            line-height: 15px;
+            box-shadow: inset 0px 1px 4px #ECECEC;
+            -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+            -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+        }
+
+        .basic-grey textarea {
+            padding: 5px 3px 3px 5px;
+        }
+
+        .basic-grey select {
+            background: #FFF url('down-arrow.png') no-repeat right;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 0.01px;
+            text-overflow: '';
+            width: 70%;
+            height: 35px;
+            line-height: 25px;
+        }
+
+        .basic-grey textarea {
+            height: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .basic-grey .button {
+            background: #535e69;
+            border: none;
+            padding: 10px 25px 10px 25px;
+            color: #FFF;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .basic-grey .button:hover {
+            background: #1e2f41
+        }
+
+        .contact-text-title {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        .contact-text {
+            font-size: 14px;
+            line-height: 6px;
+            color: #212529;
+            font-weight: bold;
+        }
+
+        .icons {
+            width: 35px;
+            height: 35px;
+            margin: 5px;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .navbar {
+            color: #fff;
+            background-color: #1e2f41;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="home.html"><img class="mr-5 ml-5" src="images/img/SVG/logo.svg" alt=""
+                    style="width: 120px;height: 60px;"></a>
+            <button class="navbar-toggler" type="button" style="font-size: 0.3cm;" data-toggle=" collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link mt-2 ml-1" href="our-story.html">OUR STORY
+                            關於我們<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="order.html">ORDER FLOWERS 訂花</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="wedding.html">WEDDING 婚禮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="workshop.html">WORKSHOP 課程</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <form action="" method="post" class="basic-grey mb-5" style="margin-top: 10%;">
+
+        <h1 style="font-family: Arial, Helvetica, sans-serif;">Contact Form
+            <span style="font-family: Arial, Helvetica, sans-serif;">Please fill all the texts in the
+                fields.</span>
+        </h1>
+
+        <label>
+            <span>新娘/新郎姓名:</span>
+            <select id="template" name="themplate" onchange="changeStyle();">
+                <option value="basic-grey">姓名</option>
+                <option value="elegant-aero">elegant-aero</option>
+                <option value="smart-green">smart-green</option>
+                <option value="white-pink">white-pink</option>
+                <option value="bootstrap-frm">bootstrap-frm</option>
+                <option value="dark-matter">dark-matter</option>
+            </select>
+        </label>
+
+        <label>
+            <span>聯絡人手機:</span>
+            <input id="name" type="text" name="name" placeholder="電話" />
+        </label>
+        <label>
+            <span>郵件信箱:</span>
+            <input id="email" type="email" name="email" placeholder="Email" />
+        </label>
+
+        <label>
+            <span>Message :</span>
+            <textarea id="message" name="message" placeholder="婚禮日期/婚禮地點/婚禮形式/花藝佈置預算/可洽談時間"></textarea>
+        </label>
+
+        <label>
+            <span>&nbsp;</span>
+            <input type="button" class="button" value="Send" />
+        </label>
+
+    </form>
+
+    <contact-section>
+        <hr>
+        <div class="container d-flex justify-content-around mb-3">
+
+            <div class="row d-flex flex-column">
+
+                <div class="d-flex mb-3">
+                    <a href="#">
+                        <div class="icons mr-3">
+                            <img src="images/img/SVG/icon/facebook.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icons mr-3">
+                            <img src="images/img/SVG/icon/email.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icons mr-3">
+                            <img src="images/img/SVG/icon/instagram.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+
+                <div>
+                    <p class="contact-text-title">LOCATION & CONTACTS</p>
+                    <p class="contact-text">TEL:0919-120-034</p>
+                    <p class="contact-text">大安店/台北市大安區</p>
+                    <p class="contact-text">E-mail:nini1020123@gmail.com</p>
+                    <p class="contact-text">11：00 a.m. - 8：00 p.m.（週日公休 Sunday Off）</p>
+                </div>
+            </div>
+
+            <div class="row d-flex flex-column">
+                <p class="contact-text-title">COMPANY</p>
+                <a href="">
+                    <p class="contact-text">售後服務</p>
+                </a>
+                <a href="">
+                    <p class="contact-text">Q&A</p>
+                </a>
+                <a href="">
+                    <p class="contact-text">婚禮佈置預約洽詢</p>
+                </a>
+                <a href="">
+                    <p class="contact-text">關於Sbocciano</p>
+                </a>
+            </div>
+
+
+        </div>
+
+    </contact-section>
+
+    <fix-button>
+        <div class="container" style="position: relative;">
+
+            <div class="row flex-column" style="position: fixed;right: 55px;bottom: 240px;">
+
+                <div class="fixed-button mb-3">
+
+                    <a href="#" target="_blank">
+                        <img class="toolbox__button--custom" src="images/img/SVG/icon/message-pink.svg" alt="custom"
+                            style="width: 30px;height: 30px;">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </fix-button>
+
+    <page-top>
+        <div class="container" style="position: relative;">
+            <div class="row flex-column" style="position: fixed;right: 30px;bottom: 100px;">
+
+                <div>
+                    <pre></pre>
+                    <a href="#" class="abgne_gotoheader">
+                        <div class="fixed-button mb-3">
+                            <img class="toolbox__button--custom" src="images/img/往上捲動.jpg" alt="custom"
+                                style="width: 90px;height: 120px;">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </page-top>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center" style="width: 100%;height: 60px;background-color: #322b2b;">
+                    <span class="mt-2" style="color:#fff;font-size: 15px;opacity: 0.6;">© Sbocciano Flower 2020 All
+                        Rights
+                        Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function changeStyle() {
+            var template = document.getElementById("template");
+            var index = template.selectedIndex;
+            var templatevalue = template.options[index].value;
+            var templatecss = document.getElementById("templatecss");
+            templatecss.setAttribute("href", "css/" + templatevalue + ".css");
+            document.getElementsByTagName("form")[0].setAttribute("class", templatevalue);
+        }
+    </script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+        let scrollLast = 0;
+
+
+
+        $(window).scroll(function () {
+            let scrollNow = $(this).scrollTop();
+
+            if (scrollLast < scrollNow) {
+                $('.navbar').addClass('hide');
+            }
+            else {
+                $('.navbar').removeClass('hide');
+            }
+
+            scrollLast = scrollNow;
+
+        })
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

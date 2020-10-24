@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sbocciano Flower</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/img/SVG/Sbocciano-logo.jpg" sizes="16x16 32x32 48x48 64x64"
+        type="image/x-icon">
+    <style>
+        body {
+            cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat942.png), auto;
+        }
+
+        .navbar {
+            transition: 1s;
+        }
+
+        .navbar.hide {
+            transform: translateY(-80px);
+        }
+
+        .nav-link {
+            font-size: 0.6rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .nav-link:hover {
+            font-size: 0.6rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #BC5839;
+            outline-style: inset;
+        }
+
+        .pics-box {
+            width: 375px;
+            height: 450px;
+            overflow: hidden;
+        }
+
+        .wedding-pics {
+            width: 375px;
+            height: 450px;
+            transition: all 0.6s ease-out;
+        }
+
+        .wedding-pics:hover {
+            transform: scale(1.2);
+        }
+
+        .pics-box-b {
+            width: 750px;
+            height: 450px;
+            overflow: hidden;
+        }
+
+        .wedding-pics-b {
+            width: 750px;
+            height: 450px;
+            transition: all 0.6s ease-out;
+        }
+
+        .wedding-pics-b:hover {
+            transform: scale(1.2);
+        }
+
+        .wedding-text-p {
+            color: #535e69;
+            font-size: 18px;
+            line-height: 10px;
+        }
+
+        .wedding-text-p2 {
+            color: #535e69;
+            font-size: 15px;
+            line-height: 6px;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .navbar {
+            color: #fff;
+            background-color: #1e2f41;
+        }
+
+        @media (max-width:992px) {
+            .carousel-inner {
+                margin-top: 11%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="home.html"><img class="mr-5 ml-5" src="images/img/SVG/logo.svg" alt=""
+                    style="width: 120px;height: 60px;"></a>
+            <button class="navbar-toggler" type="button" style="font-size: 0.3cm;" data-toggle=" collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link mt-2 ml-1" href="our-story.html">OUR STORY
+                            關於我們<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="order.html">ORDER FLOWERS 訂花</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="wedding.html">WEDDING 婚禮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="workshop.html">WORKSHOP 課程</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <banner>
+        <div class="container banner-container">
+            <div class="row-carousel">
+                <div class="row" style="margin-top: 10%;">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner mb-5">
+                            <div class="carousel-item active">
+                                <img src="images/img/wedding/輪播/01.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/img/wedding/輪播/02.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/img/wedding/輪播/03.jpg" class="d-block w-100" alt="">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </banner>
+
+    <reservation>
+        <div class="container">
+            <div class="row  d-flex justify-content-center">
+                <div class="wedding-text" style="text-align: center;">
+                    <div>
+                        <h6 style="color: #1e2f41;font-family: 'Noto Sans TC', sans-serif;line-height: 12px;">
+                            創造美麗是我們的熱情
+                        </h6>
+                        <h6 style="color: #1e2f41;font-family: 'Noto Sans TC', sans-serif;line-height: 50px;">
+                            我們很高興將熱情帶給您的婚禮創造真正美麗的事物。
+                        </h6>
+                        <p class="wedding-text-p">Creating beauty is our passion and we delight in bringing our passion
+                            to
+                        </p>
+                        <p class="wedding-text-p">create something truly beautiful for your wedding.</p>
+                    </div>
+
+                    <div class="mt-4 mb-4">
+                        <p class="wedding-text-p2">Blending tones inspired by nature and each season.</p>
+                        <p class="wedding-text-p2">We are able to hand pick the most perfect bloom for the bride’s
+                            bouquet.
+                        </p>
+                        <p class="wedding-text-p2">Each wedding design is one of a kind, handcrafted especially for you.
+                        </p>
+                    </div>
+
+                    <div class="mb-4">
+                        <a href="form.html">
+                            <button type="button" class="btn btn-outline-dark" style="font-size: 14px;">我要預約</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </reservation>
+
+    <pics-area>
+        <div class="container">
+
+            <div class="row d-flex justify-content-center">
+                <a href="">
+                    <div class="pics-box">
+                        <img class="wedding-pics" src="images/img/wedding/照片區/01.jpg" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="pics-box">
+                        <img class="wedding-pics" src="images/img/wedding/照片區/02.jpg" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="pics-box">
+                        <img class="wedding-pics" src="images/img/wedding/照片區/03.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <a href="">
+                    <div class="pics-box-b">
+                        <img class="wedding-pics-b" src="images/img/wedding/照片區/04.jpg" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="pics-box">
+                        <img class="wedding-pics" src="images/img/wedding/照片區/05.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+
+            <div class="row d-flex justify-content-center mb-5">
+                <a href="">
+                    <div class="pics-box">
+                        <img class="wedding-pics" src="images/img/wedding/照片區/06.jpg" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="pics-box-b">
+                        <img class="wedding-pics-b" src="images/img/wedding/照片區/07.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+    </pics-area>
+
+    <fix-button>
+        <div class="container" style="position: relative;">
+
+            <div class="row flex-column" style="position: fixed;right: 55px;bottom: 240px;">
+
+                <div class="fixed-button mb-3">
+
+                    <a href="#" target="_blank">
+                        <img class="toolbox__button--custom" src="images/img/SVG/icon/message-pink.svg" alt="custom"
+                            style="width: 30px;height: 30px;">
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row flex-column" style="position: fixed;right: 56px;bottom: 290px;">
+
+                <div class="fixed-button mb-3">
+
+                    <a href="#" target="_blank">
+                        <img class="toolbox__button--custom" src="images/img/SVG/icon/shopcar-pink.svg" alt="custom"
+                            style="width: 30px;height: 30px;">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </fix-button>
+
+    <page-top>
+        <div class="container" style="position: relative;">
+            <div class="row flex-column" style="position: fixed;right: 30px;bottom: 100px;">
+
+                <div>
+                    <pre></pre>
+                    <a href="#" class="abgne_gotoheader">
+                        <div class="fixed-button mb-3">
+                            <img class="toolbox__button--custom" src="images/img/往上捲動.jpg" alt="custom"
+                                style="width: 90px;height: 120px;">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </page-top>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center" style="width: 100%;height: 60px;background-color: #322b2b;">
+                    <span class="mt-2" style="color:#fff;font-size: 15px;opacity: 0.6;">© Sbocciano Flower 2020 All
+                        Rights
+                        Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+        let scrollLast = 0;
+
+
+
+        $(window).scroll(function () {
+            let scrollNow = $(this).scrollTop();
+
+            if (scrollLast < scrollNow) {
+                $('.navbar').addClass('hide');
+            }
+            else {
+                $('.navbar').removeClass('hide');
+            }
+
+            scrollLast = scrollNow;
+
+        })
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

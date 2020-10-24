@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sbocciano Flower</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Dosis&family=Raleway&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/img/SVG/Sbocciano-logo.jpg" sizes="16x16 32x32 48x48 64x64"
+        type="image/x-icon">
+
+    <style>
+        body {
+            /* height: 200vh; */
+            cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat942.png), auto;
+        }
+
+        .navbar {
+            transition: 1s;
+        }
+
+        .navbar.hide {
+            transform: translateY(-80px);
+        }
+
+        .nav-link {
+            font-size: 0.6rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .nav-link:hover {
+            font-size: 0.6rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #BC5839;
+            outline-style: inset;
+        }
+
+        .banner-area-img-wrap img {
+            width: 100%;
+        }
+
+        .animate__animated {
+            color: white;
+            font-size: 200px;
+            font-family: 'Dancing Script', cursive;
+            opacity: 0.6;
+
+        }
+
+        .row-ns-pics {
+            z-index: 1;
+            transform: translateY(200px);
+            transition: .8s ease-out;
+            opacity: 0.6;
+        }
+
+        .row-ns-pics.move-up {
+            transform: translateY(50px);
+            opacity: 1;
+        }
+
+        .ns-box {
+            width: 100%;
+            height: 180px;
+            background-color: #1e2f41;
+            justify-content: center;
+            position: absolute;
+            top: 62.5%;
+            z-index: 0;
+        }
+
+        .new-product-img img {
+            position: relative;
+            width: 270px;
+            height: 380px;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .new-product-border {
+            position: absolute;
+            border: 3px solid #1e2f41;
+            width: 270px;
+            height: 380px;
+            z-index: 1;
+        }
+
+        .new-product-img2 img {
+            position: relative;
+            width: 270px;
+            height: 380px;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .new-product-border2 {
+            position: absolute;
+            border: 3px solid #1e2f41;
+            width: 270px;
+            height: 380px;
+            z-index: 1;
+        }
+
+        .new-product-img3 img {
+            position: relative;
+            width: 270px;
+            height: 380px;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .new-product-border3 {
+            position: absolute;
+            border: 3px solid #1e2f41;
+            width: 270px;
+            height: 380px;
+            z-index: 1;
+        }
+
+        .ns-product-name {
+            color: white;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .ns-product-name2 {
+            color: white;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .ft-bg {
+            width: 100%;
+            height: 200px;
+            background-color: rgb(221, 221, 221);
+            position: absolute;
+            top: 2000px;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .navbar {
+            color: #fff;
+            background-color: #1e2f41;
+        }
+
+        @media (max-width:992px) {
+            .animate__animated {
+                visibility: hidden;
+            }
+
+            .hero-img {
+                margin-top: 17%;
+            }
+
+            .dtp-area {
+                flex-direction: column;
+            }
+
+            .dp-area {
+                margin-top: 20px;
+            }
+
+            .dt-area {
+                column-count: 12;
+            }
+
+            .ns-box {
+                top: 60.5%;
+            }
+
+            .ns-product-name2 {
+                color: #1e2f41;
+                font-size: 14px;
+                text-align: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="home.html"><img class="mr-5 ml-5" src="images/img/SVG/logo.svg" alt=""
+                    style="width: 120px;height: 60px;"></a>
+            <button class="navbar-toggler" type="button" style="font-size: 0.3cm;" data-toggle=" collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link mt-2 ml-1" href="our-story.html">OUR STORY
+                            關於我們<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="order.html">ORDER FLOWERS 訂花</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="wedding.html">WEDDING 婚禮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="workshop.html">WORKSHOP 課程</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <hero-section>
+        <div class="container-fluid-hero">
+            <div class="row-hero position-relative">
+
+
+                <div class="hero-banner">
+                    <div class="hero-banner-area position-absolute w-100" style="top:15%;text-align: right;">
+                        <p class="animate__animated animate__zoomIn mr-5 pr-5 ">Flower</p>
+                    </div>
+
+                    <div class="banner-area-img-wrap mb-5">
+                        <img class="hero-img" src="images/img/35.jpg" alt=""></img>
+                    </div>
+                </div>
+
+    </hero-section>
+
+    <new-section>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div>
+                    <h3 style="color: #1e2f41;font-family:Verdana, Geneva, Tahoma, sans-serif;">New Collection</h3>
+                </div>
+            </div>
+
+            <div class="row row-ns-pics justify-content-around" style="position: relative;">
+
+                <div>
+                    <div>
+                        <div class="new-product-border d-flex flex-column justify-content-center">
+                            <!-- <a href="#" class="shop-now">
+                                <img class="ml-5" src="images/img/183.69.png" alt=""
+                                    style="width: 130px;height: 48px;object-fit: cover;">
+                            </a> -->
+                        </div>
+                    </div>
+
+                    <div class="new-product-img">
+                        <img class="np-img" src="images/img/54.jpg" alt="">
+                    </div>
+
+                    <div class="ns-product-name2 mt-1">
+                        鮮花盆花-橙橘｜Sbocciano
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="new-product-border2"></div>
+                    </div>
+                    <div class="new-product-img2">
+                        <img src="images/img/53.jpg" alt="">
+                    </div>
+
+                    <div class="ns-product-name2 mt-1">
+                        永生花盆-秋褐｜Sbocciano
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <div class="new-product-border3"></div>
+                    </div>
+                    <div class="new-product-img3">
+                        <img src="images/img/63.jpg" alt="">
+                    </div>
+
+                    <div class="ns-product-name mt-1">
+                        鮮花盆花-午后的莓果茶｜Sbocciano
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-ns-box d-flex justify-content-center">
+                <div class="ns-box mb-5"></div>
+            </div>
+
+        </div>
+    </new-section>
+
+    <contact-section class="border-top">
+        <div class="container-fluid">
+            <div class="row" style="height: 200px;"></div>
+
+            <div class="dtp-area row d-flex justify-content-center">
+                <div class="dt-area col-lg-5 d-flex flex-column ml-5">
+                    <h5 style="color:#1e2f41;font-family:monospace;">Sbocciano Flower 綻放</h5>
+                    <span style="font-size: 16px;font-family:monospace;">TEL : </span>
+                    <span style="font-size: 16px;font-family:monospace;color:#BC5839;">0919-120-034</span>
+                    <span style="font-size: 16px;font-family:monospace;">E-mail:</span>
+                    <a class="mb-3" href="mailto:gracegirl0514@gmail.com"
+                        style="font-size: 16px;font-family:monospace;color:#BC5839;text-decoration: none;">nini1020123@gmail.com</a>
+                    <span style="font-size: 16px;font-family:monospace;">11：00 a.m. - 8：00 p.m.（週日公休 Sunday Off）</span>
+                </div>
+
+                <div class="dp-area col-5 mb-5">
+                    <div class="d-flex mb-1">
+                        <img class="mr-1" src="images/img/sm-pics/01.jpg" alt="">
+                        <img class="mr-1" src="images/img/sm-pics/02.jpg" alt="">
+                        <img class="mr-1" src="images/img/sm-pics/03.jpg" alt="">
+                    </div>
+                    <div class="d-flex mb-1">
+                        <img class="mr-1" src="images/img/sm-pics/04.jpg" alt="">
+                        <img class="mr-1" src="images/img/sm-pics/05.jpg" alt="">
+                        <img class="mr-1" src="images/img/sm-pics/06.jpg" alt="">
+                    </div>
+                    <div class="d-flex mb-1">
+                        <img class="mr-1" src="images/img/sm-pics/07.jpg" alt="">
+                        <img class="mr-1" src="images/img/sm-pics/08.jpg" alt="">
+                        <img class="mr-1" src="images/img/sm-pics/09.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </contact-section>
+
+    <fix-button>
+        <div class="container" style="position: relative;">
+
+            <div class="row flex-column" style="position: fixed;right: 55px;bottom: 240px;">
+
+                <div class="fixed-button mb-3">
+
+                    <a href="#" target="_blank">
+                        <img class="toolbox__button--custom" src="images/img/SVG/icon/message-pink.svg" alt="custom"
+                            style="width: 30px;height: 30px;">
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row flex-column" style="position: fixed;right: 56px;bottom: 290px;">
+
+                <div class="fixed-button mb-3">
+
+                    <a href="#" target="_blank">
+                        <img class="toolbox__button--custom" src="images/img/SVG/icon/shopcar-pink.svg" alt="custom"
+                            style="width: 30px;height: 30px;">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </fix-button>
+
+    <page-top>
+        <div class="container" style="position: relative;">
+            <div class="row flex-column" style="position: fixed;right: 30px;bottom: 100px;">
+
+                <div>
+                    <pre></pre>
+                    <a href="#" class="abgne_gotoheader">
+                        <div class="fixed-button mb-3">
+                            <img class="toolbox__button--custom" src="images/img/往上捲動.jpg" alt="custom"
+                                style="width: 90px;height: 120px;">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </page-top>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center" style="width: 100%;height: 60px;background-color: #322b2b;">
+                    <span class="mt-2" style="color:#fff;font-size: 15px;opacity: 0.6;">© Sbocciano Flower 2020 All
+                        Rights
+                        Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        let scrollLast = 0;
+
+
+
+        $(window).scroll(function () {
+            let scrollNow = $(this).scrollTop();
+
+            if (scrollLast < scrollNow) {
+                $('.navbar').addClass('hide');
+            }
+            else {
+                $('.navbar').removeClass('hide');
+            }
+
+            scrollLast = scrollNow;
+
+        })
+
+        $(window).on('scroll', function () {
+
+            let scrollTop = $(this).scrollTop();
+
+            let isMobile = $(this).width() < 375;
+            let newpicsMoveupY = 500;
+
+            if (isMobile) {
+                newpicsMoveupY = 700;
+            }
+
+            if (scrollTop > newpicsMoveupY) {
+                $('.row-ns-pics').addClass('move-up');
+            }
+            else {
+                $('.row-ns-pics').removeClass('move-up');
+            }
+
+        })
+    </script>
+</body>
+
+</html>

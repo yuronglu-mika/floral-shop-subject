@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sbocciano Flower</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/img/SVG/Sbocciano-logo.jpg" sizes="16x16 32x32 48x48 64x64"
+        type="image/x-icon">
+    <style>
+        body {
+            cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat942.png), auto;
+        }
+
+        .navbar {
+            transition: 1s;
+        }
+
+        .navbar.hide {
+            transform: translateY(-80px);
+        }
+
+        .nav-link {
+            font-size: 0.6rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .nav-link:hover {
+            font-size: 0.6rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #BC5839;
+            outline-style: inset;
+        }
+
+        .product-menu-area {
+            position: relative;
+        }
+
+        .product-menu-text {
+            position: absolute;
+            top: 25%;
+            text-align: center;
+
+        }
+
+        p {
+            color: white;
+            font-size: 16px;
+            line-height: 14px;
+            font-family: monospace;
+        }
+
+        .p-2 {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .pmt {
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .pmt:hover {
+            font-size: 18px;
+            color: #535e69;
+        }
+
+        .flower-series {
+            color: #1e2f41;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .product-img {
+            width: 450px;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .product-img01 {
+            width: 450px;
+            height: 450px;
+            transform: scale(1, 1);
+            transition: all .5s ease-out;
+            content: url(https://i.ibb.co/GCc3JsZ/01.jpg);
+        }
+
+        .product-img01:hover {
+            transform: scale(1.03, 1.03);
+            content: url(https://i.ibb.co/G91GLbH/01-hover.jpg);
+        }
+
+        .product-img03 {
+            width: 450px;
+            height: 450px;
+            transform: scale(1, 1);
+            transition: all .5s ease-out;
+            content: url(https://i.ibb.co/6bb38Pz/03.jpg);
+        }
+
+        .product-img03:hover {
+            transform: scale(1.03, 1.03);
+            content: url(https://i.ibb.co/zZZL3Zt/03-hover.jpg);
+        }
+
+        .product-img05 {
+            width: 450px;
+            height: 450px;
+            transform: scale(1, 1);
+            transition: all .5s ease-out;
+            content: url(https://i.ibb.co/Qk6cDQC/05.jpg);
+        }
+
+        .product-img05:hover {
+            transform: scale(1.03, 1.03);
+            content: url(https://i.ibb.co/zn0rCpr/05-hover.jpg);
+        }
+
+        .product-text {
+            color: #535e69;
+            font-size: 20px;
+        }
+
+        .product-img06 {
+            width: 450px;
+            height: 450px;
+            transform: scale(1, 1);
+            transition: all .5s ease-out;
+            content: url(https://i.ibb.co/Z2dFJQ7/06.jpg);
+        }
+
+        .product-img06:hover {
+            transform: scale(1.03, 1.03);
+            content: url(https://i.ibb.co/2YWj0gv/06-hover.jpg);
+        }
+
+        .product-img07 {
+            width: 450px;
+            height: 450px;
+            transform: scale(1, 1);
+            transition: all .5s ease-out;
+            content: url(https://i.ibb.co/V06ksBj/07.jpg);
+        }
+
+        .product-img07:hover {
+            transform: scale(1.03, 1.03);
+            content: url(https://i.ibb.co/17vkqpW/07-hover.jpg);
+        }
+
+        .product-img09 {
+            width: 450px;
+            height: 450px;
+            transform: scale(1, 1);
+            transition: all .5s ease-out;
+            content: url(https://i.ibb.co/vQHrFkQ/09.jpg);
+        }
+
+        .product-img09:hover {
+            transform: scale(1.03, 1.03);
+            content: url(https://i.ibb.co/3zZQzH1/09-hover.jpg);
+        }
+
+        .product-img13 {
+            width: 450px;
+            height: 450px;
+            transform: scale(1, 1);
+            transition: all .5s ease-out;
+            content: url(https://i.ibb.co/Q9NMLV2/13.jpg);
+        }
+
+        .product-img13:hover {
+            transform: scale(1.03, 1.03);
+            content: url(https://i.ibb.co/ThcTqq7/13-hover.jpg);
+        }
+
+        .product-img14 {
+            width: 450px;
+            height: 450px;
+            transform: scale(1, 1);
+            transition: all .5s ease-out;
+            content: url(https://i.ibb.co/mXDHcTb/14.jpg);
+        }
+
+        .product-img14:hover {
+            transform: scale(1.03, 1.03);
+            content: url(https://i.ibb.co/6yWSpkr/14-hover.jpg);
+        }
+
+        .product-img12 {
+            width: 450px;
+            height: 450px;
+            transform: scale(1, 1);
+            transition: all .5s ease-out;
+            content: url(https://i.ibb.co/M1VLXfJ/12.jpg);
+        }
+
+        .product-img12:hover {
+            transform: scale(1.03, 1.03);
+            content: url(https://i.ibb.co/9HZfpD3/12-hover.jpg);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .navbar {
+            color: #fff;
+            background-color: #1e2f41;
+        }
+
+        @media (max-width:992px) {
+            .flower-series {
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .product-text {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .hero-pic-img {
+                margin-top: 17%;
+            }
+
+            .ptm-title {
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="home.html"><img class="mr-5 ml-5" src="images/img/SVG/logo.svg" alt=""
+                    style="width: 120px;height: 60px;"></a>
+            <button class="navbar-toggler" type="button" style="font-size: 0.3cm;" data-toggle=" collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link mt-2 ml-1" href="our-story.html">OUR STORY
+                            關於我們<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="order.html">ORDER FLOWERS 訂花</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="wedding.html">WEDDING 婚禮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="workshop.html">WORKSHOP 課程</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <product-menu>
+        <div class="container-fluid m-0">
+            <div class="row-product-menu-area">
+
+                <div class="row product-menu-text d-flex flex-column w-100">
+                    <p class="ptm-title">週花服務 Weekly Flower Delivery</p>
+                    <p class="ptm-title">客製訂花 Customised</p>
+                </div>
+
+                <div class="row product-menu-text d-flex w-100 justify-content-center" style="top: 36%;">
+                    <a href="#bouquet" style="text-decoration:none;">
+                        <p class="pmt p-2 mr-4" style="border: 2px solid #fff;">手綁花系列</p>
+                    </a>
+                    <a href="#Preserved" style="text-decoration:none;">
+                        <p class="pmt p-2 mr-4" style="border: 2px solid #fff;">永生花系列</p>
+                    </a>
+                    <a href="#arrangement" style="text-decoration:none;">
+                        <p class="pmt p-2 mr-4" style="border: 2px solid #fff;">花藝創作系列</p>
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="product-menu-pic active w-100">
+                        <img src="images/img/product01.jpg" class="hero-pic-img mb-5" alt=""
+                            style="width: 100%;object-fit: cover;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </product-menu>
+
+    <product-list>
+        <div class="container-fluid product-list">
+            <!-- <div class="row-product-list"> -->
+
+
+            <div class="row d-flex ml-5 mb-3">
+                <div class="left-title">
+                    <h6 class="
+                        flower-series mt-5" id="bouquet">Sbocciano｜ 手綁花束系列 BOUQUET</h6>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mb-5">
+                <div>
+                    <a href="">
+                        <div class="product-list-img mr-5 mb-3">
+                            <img class="product-img01" src="" alt=""
+                                style="width: 400px;height: 400px;object-fit: cover;">
+                        </div>
+                    </a>
+                    <div>
+                        <p class="product-text">輕柔秋陽 秋天花束</p>
+                        <p class="product-text">NT$ 2,800 </p>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="">
+                        <div class="product-list-img mr-5 mb-3">
+                            <img class="product-img03" src="" alt=""
+                                style="width: 400px;height: 400px;object-fit: cover;">
+                        </div>
+                    </a>
+                    <div>
+                        <p class="product-text">甜夏晨光 夏日花束</p>
+                        <p class="product-text">NT$ 2,580 </p>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="">
+                        <div class="product-list-img mr-5 mb-3">
+                            <img class="product-img05" src="" alt=""
+                                style="width: 400px;height: 400px;object-fit: cover;">
+                        </div>
+                    </a>
+                    <div>
+                        <p class="product-text">回憶走廊 日常花束</p>
+                        <p class="product-text">NT$ 1,850 </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-flex ml-5 mb-3">
+                <div class="left-title" id="Preserved">
+                    <h6 class="
+                        flower-series">Sbocciano｜ 乾燥永生花系列 Preserved Flower</h6>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mb-5">
+                <div>
+                    <a href="product-page.html">
+                        <div class="product-list-img mr-5 mb-3">
+                            <img class="product-img06" src="" alt=""
+                                style="width: 400px;height: 400px;object-fit: cover;">
+                        </div>
+                    </a>
+                    <div>
+                        <p class="product-text">寧靜的午後 乾燥盆花</p>
+                        <p class="product-text">NT$ 1,680 </p>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="">
+                        <div class="product-list-img mr-5 mb-3">
+                            <img class="product-img07" src="" alt=""
+                                style="width: 400px;height: 400px;object-fit: cover;">
+                        </div>
+                    </a>
+                    <div>
+                        <p class="product-text">喜悅收藏 乾燥花束</p>
+                        <p class="product-text">NT$ 1,580 </p>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="">
+                        <div class="product-list-img mr-5 mb-3">
+                            <img class="product-img09" src="" alt=""
+                                style="width: 400px;height: 400px;object-fit: cover;">
+                        </div>
+                    </a>
+                    <div>
+                        <p class="product-text">恆星璀璨 永生花盒</p>
+                        <p class="product-text">NT$ 2,250 </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row d-flex ml-5 mb-3">
+
+                <div class="left-title" id="arrangement">
+                    <h6 class="
+                        flower-series">Sbocciano｜ 花藝創作系列 Flower Arrangement</h6>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mb-5">
+                <div>
+                    <a href="">
+                        <div class="product-list-img mr-5 mb-3">
+                            <img class="product-img13" src="" alt=""
+                                style="width: 400px;height: 400px;object-fit: cover;">
+                        </div>
+                    </a>
+                    <div>
+                        <p class="product-text">有你 創作花束</p>
+                        <p class="product-text">NT$ 2,200 </p>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="">
+                        <div class="product-list-img mr-5 mb-3">
+                            <img class="product-img14" src="" alt=""
+                                style="width: 400px;height: 400px;object-fit: cover;">
+                        </div>
+                    </a>
+                    <div>
+                        <p class="product-text">綻放 創作花束</p>
+                        <p class="product-text">NT$ 2,380 </p>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="">
+                        <div class="product-list-img mr-5 mb-3">
+                            <img class="product-img12" src="" alt=""
+                                style="width: 400px;height: 400px;object-fit: cover;">
+                        </div>
+                    </a>
+                    <div>
+                        <p class="product-text">從前從前 創作玻璃花盒</p>
+                        <p class="product-text">NT$ 1,850 </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 
+            </div> -->
+        </div>
+    </product-list>
+    <!-- 分頁顏色修改 -->
+    <!-- <pagination>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </pagination> -->
+
+    <fix-button>
+        <div class="container" style="position: relative;">
+
+            <div class="row flex-column" style="position: fixed;right: 55px;bottom: 240px;">
+
+                <div class="fixed-button mb-3">
+
+                    <a href="#" target="_blank">
+                        <img class="toolbox__button--custom" src="images/img/SVG/icon/message-pink.svg" alt="custom"
+                            style="width: 30px;height: 30px;">
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row flex-column" style="position: fixed;right: 56px;bottom: 290px;">
+
+                <div class="fixed-button mb-3">
+
+                    <a href="#" target="_blank">
+                        <img class="toolbox__button--custom" src="images/img/SVG/icon/shopcar-pink.svg" alt="custom"
+                            style="width: 30px;height: 30px;">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </fix-button>
+
+    <page-top>
+        <div class="container" style="position: relative;">
+            <div class="row flex-column" style="position: fixed;right: 30px;bottom: 100px;">
+
+                <div>
+                    <pre></pre>
+                    <a href="#" class="abgne_gotoheader">
+                        <div class="fixed-button mb-3">
+                            <img class="toolbox__button--custom" src="images/img/往上捲動.jpg" alt="custom"
+                                style="width: 90px;height: 120px;">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </page-top>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center" style="width: 100%;height: 60px;background-color: #322b2b;">
+                    <span class="mt-2" style="color:#fff;font-size: 15px;opacity: 0.6;">© Sbocciano Flower 2020 All
+                        Rights
+                        Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+        let scrollLast = 0;
+
+
+
+        $(window).scroll(function () {
+            let scrollNow = $(this).scrollTop();
+
+            if (scrollLast < scrollNow) {
+                $('.navbar').addClass('hide');
+            }
+            else {
+                $('.navbar').removeClass('hide');
+            }
+
+            scrollLast = scrollNow;
+
+        })
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

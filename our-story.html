@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sbocciano Flower</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/img/SVG/Sbocciano-logo.jpg" sizes="16x16 32x32 48x48 64x64"
+        type="image/x-icon">
+
+    <style>
+        body {
+            cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat942.png), auto;
+        }
+
+        .navbar {
+            transition: 1s;
+        }
+
+        .navbar.hide {
+            transform: translateY(-80px);
+        }
+
+        .nav-link {
+            font-size: 0.6rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .nav-link:hover {
+            font-size: 0.6rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #BC5839;
+            outline-style: inset;
+        }
+
+        .sec-img {
+            width: 280px;
+            height: 420px;
+            object-fit: cover;
+        }
+
+        .ourstory-text {
+            transform: translateX(900px);
+            transition: .9s ease-out;
+        }
+
+        .ourstory-text.move-up {
+            transform: translateX(35px);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .navbar {
+            color: #fff;
+            background-color: #1e2f41;
+        }
+
+        @media (max-width:992px) {
+            .sec-img {
+                width: 100%;
+
+            }
+
+            .ourstory-text {
+                width: 80%;
+                margin-right: auto;
+            }
+
+            .hero-pic-img {
+                margin-top: 20%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="home.html"><img class="mr-5 ml-5" src="images/img/SVG/logo.svg" alt=""
+                    style="width: 120px;height: 60px;"></a>
+            <button class="navbar-toggler" type="button" style="font-size: 0.3cm;" data-toggle=" collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link mt-2 ml-1" href="our-story.html">OUR STORY
+                            關於我們<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="order.html">ORDER FLOWERS 訂花</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="wedding.html">WEDDING 婚禮</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-2 ml-1" href="workshop.html">WORKSHOP 課程</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <about>
+        <div class="container-fluid hero-area">
+            <div class="row">
+                <div class="hero-pic active">
+                    <img src="images/img/our story5.jpg" class="hero-pic-img mb-5" alt=""
+                        style="width: 100%;object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </about>
+
+    <section-1>
+        <div class="container">
+            <div class="row d-flex justify-content-center mb-3">
+
+                <div class="col-lg-3 mr-5 mb-3">
+                    <img class="sec-img" src="images/img/64.jpg" alt="" style="border: 5px solid #1e2f41;">
+                </div>
+
+                <div class="ourstory-text col-lg-7">
+                    <p style="color: black;font-size: 20px;">
+                        Sbocciano Flower是一家富有創意的花藝設計工作室。成立於2020年，總部位於台灣。
+                        我們提供高影響力的花束和婚禮佈置，舉辦創意花卉工作坊，並為活動和婚禮提供全面的花卉設計。
+                    </p>
+                    <p style="color: black;font-size: 18px;">
+                        Sbocciano Flower is a creative floral design studio. Founded in 2020 and based in Taiwan.
+                        We deliver high impact bouquets and wedding arrangements, host creative floral workshops and
+                        deliver full scale floral design for events and weddings.
+                    </p>
+
+                    <hr>
+
+                    <p style="color:#BC5839;font-size: 16px;">
+                        Whether you're getting flowers for home,
+                        setting mood for an event,
+                        or buying gift for a loved one,
+                        we've got you covered!
+                    </p>
+
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-dark" style="font-size: 14px;">Learn More</button>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-lg-3 mr-5 mb-3">
+                    <img class="sec-img" src="images/img/65.jpg" alt="" style="border: 5px solid #1e2f41;">
+                </div>
+
+                <div class="ourstory-text col-lg-7">
+                    <p style="color: black;font-size: 20px;">
+                        我們的熱情是通過紋理和意想不到的色彩組合來增強花朵的自然美感。我們選擇不總是保留每種顏色的每種花。取而代之的是，我們會精心選擇一系列搭配效果最佳的鮮花，每週兩次，每次都新鮮交貨。
+                    </p>
+                    <p style="color: black;font-size: 18px;">
+                        Our passion is to enhance natural beauty of flowers - through texture and unexpected color
+                        combinations.
+                        We choose not to have every flower in every color in stock all the time. Instead, we carefully
+                        choose a range of flowers that work best together, with fresh deliveries twice a week.
+                    </p>
+
+                    <hr>
+
+                    <p style="color:#BC5839;font-size: 16px;">
+                        Whether you're getting flowers for home,
+                        setting mood for an event,
+                        or buying gift for a loved one,
+                        we've got you covered!
+                    </p>
+
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-dark" style="font-size: 14px;">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <svg id="email-mask" viewBox="0 0 64 64" style="color: chocolate;">
+                    <path
+                        d="M41.1,25H22.9l9.1,7.1L41.1,25z M44,26.6l-12,9.3l-12-9.3V39h24V26.6z M0,0v64h64V0H0z M47,42H17V22h30V42z">
+                    </path>
+                </svg>
+            </div>
+
+        </div>
+    </section-1>
+
+    <section-2 style="margin: 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-around my-5">
+                    <img src="images/img/32.jpg" alt="" style="width:25%;height: 150px;object-fit: cover;">
+                    <img src="images/img/50.jpg" alt="" style="width:25%;height: 150px;object-fit: cover;">
+                    <img src="images/img/33.jpg" alt="" style="width:25%;height: 150px;object-fit: cover;">
+                    <img src="images/img/66.jpg" alt="" style="width:25%;height: 150px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section-2>
+
+    <fix-button>
+        <div class="container" style="position: relative;">
+
+            <div class="row flex-column" style="position: fixed;right: 55px;bottom: 240px;">
+
+                <div class="fixed-button mb-3">
+
+                    <a href="#" target="_blank">
+                        <img class="toolbox__button--custom" src="images/img/SVG/icon/message-pink.svg" alt="custom"
+                            style="width: 30px;height: 30px;">
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row flex-column" style="position: fixed;right: 56px;bottom: 290px;">
+
+                <div class="fixed-button mb-3">
+
+                    <a href="#" target="_blank">
+                        <img class="toolbox__button--custom" src="images/img/SVG/icon/shopcar-pink.svg" alt="custom"
+                            style="width: 30px;height: 30px;">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </fix-button>
+
+    <page-top>
+        <div class="container" style="position: relative;">
+            <div class="row flex-column" style="position: fixed;right: 30px;bottom: 100px;">
+
+                <div>
+                    <pre></pre>
+                    <a href="#" class="abgne_gotoheader">
+                        <div class="fixed-button mb-3">
+                            <img class="toolbox__button--custom" src="images/img/往上捲動.jpg" alt="custom"
+                                style="width: 90px;height: 120px;">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </page-top>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center" style="width: 100%;height: 60px;background-color: #322b2b;">
+                    <span class="mt-2" style="color:#fff;font-size: 15px;opacity: 0.6;">© Sbocciano Flower 2020 All
+                        Rights
+                        Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+        let scrollLast = 0;
+
+
+
+        $(window).scroll(function () {
+            let scrollNow = $(this).scrollTop();
+
+            if (scrollLast < scrollNow) {
+                $('.navbar').addClass('hide');
+            }
+            else {
+                $('.navbar').removeClass('hide');
+            }
+
+            scrollLast = scrollNow;
+
+        })
+
+        $(window).on('scroll', function () {
+
+            let scrollTop = $(this).scrollTop();
+
+            if (scrollTop > 0) {
+                $('.ourstory-text').addClass('move-up');
+            }
+            else {
+                $('.ourstory-text').removeClass('move-up');
+            }
+
+        })
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
